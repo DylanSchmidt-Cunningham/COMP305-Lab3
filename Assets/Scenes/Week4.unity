@@ -217,7 +217,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.01137507, y: 0.005074635}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -228,7 +228,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.66, y: 0.4}
+  m_Size: {x: 1.6372497, y: 0.3651375}
   m_EdgeRadius: 0
 --- !u!1 &132381993
 GameObject:
@@ -368,7 +368,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.00066305697, y: 0.0013307631}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -379,7 +379,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.18}
+  m_Size: {x: 0.18010879, y: 0.17733848}
   m_EdgeRadius: 0
 --- !u!95 &154777943
 Animator:
@@ -415,6 +415,9 @@ MonoBehaviour:
   defineGround:
     serializedVersion: 2
     m_Bits: 4294967039
+  horizontalAxis: Horizontal_Kirby
+  jumpAxis: Jump_Kirby
+  groundRadius: 0.6
 --- !u!1 &195938036
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,8 +538,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -5.12, y: -0.20276117}
-  - {x: 5.120001, y: -0.23317504}
+  - {x: -5.1172132, y: -0.21251392}
+  - {x: 5.120001, y: -0.2148912}
 --- !u!1 &594348152
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,7 +762,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.018629491, y: 0.004813418}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -770,7 +773,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.66, y: 0.4}
+  m_Size: {x: 1.6134261, y: 0.3630527}
   m_EdgeRadius: 0
 --- !u!1 &1550145565
 GameObject:
@@ -957,7 +960,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.007068068, y: 0.005227953}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -968,7 +971,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.66, y: 0.4}
+  m_Size: {x: 1.6281934, y: 0.37187403}
   m_EdgeRadius: 0
 --- !u!1 &1714599835
 GameObject:
@@ -1059,8 +1062,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -5.078245, y: -0.2087717}
-  - {x: 5.092162, y: -0.22268963}
+  - {x: -5.122098, y: -0.21486235}
+  - {x: 5.0945315, y: -0.21558166}
 --- !u!1 &1852819073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1156,6 +1159,9 @@ MonoBehaviour:
   defineGround:
     serializedVersion: 2
     m_Bits: 4294967039
+  horizontalAxis: Horizontal_Mario
+  jumpAxis: Jump_Mario
+  groundRadius: 0.5
 --- !u!95 &1852819077
 Animator:
   serializedVersion: 3
@@ -1185,7 +1191,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.005704917, y: 0.0023376495}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1196,7 +1202,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14, y: 0.27}
+  m_Size: {x: 0.09172736, y: 0.26532468}
   m_EdgeRadius: 0
 --- !u!50 &1852819079
 Rigidbody2D:
@@ -1386,6 +1392,9 @@ MonoBehaviour:
   defineGround:
     serializedVersion: 2
     m_Bits: 4294967039
+  horizontalAxis: Horizontal_Luigi
+  jumpAxis: Jump_Luigi
+  groundRadius: 0.3
 --- !u!95 &2022387664
 Animator:
   serializedVersion: 3
@@ -1415,7 +1424,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00017236918, y: 0}
+  m_Offset: {x: 0.005650133, y: 0.001391694}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1426,7 +1435,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.11908817, y: 0.3}
+  m_Size: {x: 0.08024588, y: 0.29721662}
   m_EdgeRadius: 0
 --- !u!50 &2022387666
 Rigidbody2D:

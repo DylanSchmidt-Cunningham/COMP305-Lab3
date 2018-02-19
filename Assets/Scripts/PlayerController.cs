@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour {
     public float jumpForce = 120.0f;
     public Transform groundCheck;
     public LayerMask defineGround;
+    public string horizontalAxis, jumpAxis; // e.g. "Jump_Kirby"
+    public float groundRadius = 0.6f;
 
     // Private variables
     private Rigidbody2D rBody;
@@ -16,7 +18,6 @@ public class PlayerController : MonoBehaviour {
     private Animator animator;
 
     private bool isGrounded = false;
-    private float groundRadius = 0.6f;
 
 	// Use this for initialization
 	void Start () {
@@ -27,7 +28,7 @@ public class PlayerController : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetAxis("Jump") > 0 && isGrounded)
+        if (Input.GetAxis(jumpAxis) > 0 && isGrounded)
         {
             animator.SetBool("Ground", isGrounded);
             rBody.AddForce(new Vector2(0, jumpForce));
@@ -43,7 +44,7 @@ public class PlayerController : MonoBehaviour {
 
         animator.SetFloat("vSpeed", rBody.velocity.y);
 
-        float moveHoriz = Input.GetAxis("Horizontal");
+        float moveHoriz = Input.GetAxis(horizontalAxis);
 
         // Pass horizontal velocity to animator (SPEED)
         animator.SetFloat("Speed", Mathf.Abs(moveHoriz));
